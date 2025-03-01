@@ -11,8 +11,9 @@ struct Mission: Codable, Identifiable {
     struct CrewRole: Codable {
         let name: String
         let role: String
-        let astrounat: Astronaut
     }
+    
+    
     
     let id: Int
     let launchDate: Date?
