@@ -12,8 +12,8 @@ struct CrewMember: Codable {
     let astronaut: Astronaut
 }
 
-struct Mission: Codable, Identifiable {
-    struct CrewRole: Codable {
+struct Mission: Codable, Identifiable, Hashable {
+    struct CrewRole: Codable, Hashable {
         let name: String
         let role: String
     }
